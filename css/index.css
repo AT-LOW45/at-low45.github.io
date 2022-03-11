@@ -1,8 +1,64 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 nav {
-  position: fixed;
-  background-color: aqua;
+  background-color: #f0e4f7;
   width: 100%;
-  height: 6vh;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 7px 5px 5px 5px;
+  letter-spacing: 0.1em;
+  font-size: 1.25rem;
+  padding: 0.5em;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+nav li a::after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.6px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+nav li a:hover {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  background-color: #efa8ef;
+  background-image: linear-gradient(0deg, #efa8ef 0%, #eff8f8 100%);
+}
+header h1 {
+  font-weight: bold;
+}
+header #sub-hero {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */
