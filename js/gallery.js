@@ -42,10 +42,6 @@ function createModal(imgEl) {
     const modal = document.createElement("div")
     modal.classList.add("modal")
 
-    // if(imgEl.getBoundingClientRect().left > 500) {
-    //     modal.style.transform = 
-    // }
-
     // small screens
     if(window.innerWidth <= 1000) {
         modal.style.transform = 'translateY(-500%)'
