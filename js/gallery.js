@@ -1,4 +1,5 @@
-import anime from '../node_modules/animejs/lib/anime.es.js'
+import anime from "./../node_modules/animejs/lib/anime.es.js"
+
 
 const images = document.querySelectorAll(".tall-photo")
 let modal = document.querySelector(".modal")
