@@ -4,6 +4,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 nav {
@@ -66,29 +67,127 @@ nav {
         }
     }
 
+
 }
 
 
-header {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50vh;
-    width: 100%;
-    background-color: #efa8ef;
-    background-image: linear-gradient(0deg, #efa8ef 0%, #eff8f8 100%);
 
+#homepage  {
+
+    #hero {
+
+        height: 92vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)), 
+        url('/assets/images/other/rose_sample.jpg');
+        background-size: cover;
+        // background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3%;
+        color: white;
+
+        @media only screen and (max-width: 700px) {
+            align-items: center;;
+        }
+    }
+
+    #intro {
+
+        margin-top: 10em;
+
+        & > div {
+            padding: 5% 10% 5% 10%; 
+            
+            &:first-child {
+                background-color: #ecdaf2;
+            }
+
+            &:nth-child(2) {
+                background-color: #f0e9f2;
+            }
+
+            & > article {
+                @media only screen and (max-width: 700px) {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+    }
+
+    #reviews {
+        
+        padding: 3%;
+        margin-top: 5em;
+
+        figure {
+            border: 2px solid black;
+            margin: 2% auto 2% auto;
+            padding: 3em;
+            max-width: 60%;
+            transition: all 200ms;
+
+            &:hover {
+                transform: translate(4px, -4px);
+                box-shadow: 
+                -1px 1px black, 
+                -2px 2px black, 
+                -3px 3px black, 
+                -4px 4px black, 
+                -5px 5px black,
+                -6px 6px black;
+            }
+
+            @media only screen and (max-width: 700px) {
+                & {
+                    max-width: 80%;
+                    margin: 4% auto 4% auto;
+                }
+            }
+
+            blockquote {
+                font-size: 1.3rem;
+            }
     
-    h1 {
+            figcaption {
+                font-size: 1.2rem;
+                font-style: italic;
+                text-align: end;
+                margin-top: 2%;
+            }
+        }
 
-        font-weight: bold;
     }
 
-    #sub-hero {
-        font-size: 1.2rem;
+}
+
+
+#whatsapp {
+    text-decoration: none;
+    position: fixed;
+    font-size: 1.2rem;
+    padding: .7em 2em .7em .8em;
+    transform: translateX(73%);
+    bottom: 5%;
+    right: 0;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(84,207,97);
+    transition: all 200ms;
+    display: none;
+    opacity: 0;
+    
+
+    &:hover {
+        transform: translateX(16%);
     }
+
 }
 
 

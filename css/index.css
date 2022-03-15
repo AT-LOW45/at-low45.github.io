@@ -2,6 +2,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 nav {
@@ -51,21 +52,89 @@ nav li a:hover {
   color: inherit;
 }
 
-header {
+#homepage #hero {
+  height: 92vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/other/rose_sample.jpg");
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 50vh;
-  width: 100%;
-  background-color: #efa8ef;
-  background-image: linear-gradient(0deg, #efa8ef 0%, #eff8f8 100%);
+  justify-content: center;
+  padding-left: 3%;
+  color: white;
 }
-header h1 {
-  font-weight: bold;
+@media only screen and (max-width: 700px) {
+  #homepage #hero {
+    align-items: center;
+  }
 }
-header #sub-hero {
+#homepage #intro {
+  margin-top: 10em;
+}
+#homepage #intro > div {
+  padding: 5% 10% 5% 10%;
+}
+#homepage #intro > div:first-child {
+  background-color: #ecdaf2;
+}
+#homepage #intro > div:nth-child(2) {
+  background-color: #f0e9f2;
+}
+@media only screen and (max-width: 700px) {
+  #homepage #intro > div > article {
+    margin-top: 5%;
+  }
+}
+#homepage #reviews {
+  padding: 3%;
+  margin-top: 5em;
+}
+#homepage #reviews figure {
+  border: 2px solid black;
+  margin: 2% auto 2% auto;
+  padding: 3em;
+  max-width: 60%;
+  transition: all 200ms;
+}
+#homepage #reviews figure:hover {
+  transform: translate(4px, -4px);
+  box-shadow: -1px 1px black, -2px 2px black, -3px 3px black, -4px 4px black, -5px 5px black, -6px 6px black;
+}
+@media only screen and (max-width: 700px) {
+  #homepage #reviews figure {
+    max-width: 80%;
+    margin: 4% auto 4% auto;
+  }
+}
+#homepage #reviews figure blockquote {
+  font-size: 1.3rem;
+}
+#homepage #reviews figure figcaption {
   font-size: 1.2rem;
+  font-style: italic;
+  text-align: end;
+  margin-top: 2%;
+}
+
+#whatsapp {
+  text-decoration: none;
+  position: fixed;
+  font-size: 1.2rem;
+  padding: 0.7em 2em 0.7em 0.8em;
+  transform: translateX(73%);
+  bottom: 5%;
+  right: 0;
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: #54cf61;
+  transition: all 200ms;
+  display: none;
+  opacity: 0;
+}
+#whatsapp:hover {
+  transform: translateX(16%);
 }
 
 /*# sourceMappingURL=index.css.map */

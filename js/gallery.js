@@ -1,11 +1,11 @@
-import anime from "./../node_modules/animejs/lib/anime.es.js"
+import anime from "./anime.es.js"
 
 
 const images = document.querySelectorAll(".tall-photo")
 let modal = document.querySelector(".modal")
 let currentImage = null
 
-document.addEventListener("click", function(event) {
+document.addEventListener("focusout", function(event) {
 
     if(currentImage != null) {
         currentImage.classList.remove('active')
@@ -19,7 +19,7 @@ document.addEventListener("click", function(event) {
 images.forEach(el => {
 
 
-    el.addEventListener("click", function(event) {
+    el.addEventListener("focus", function(event) {
 
         event.stopPropagation()
         // just visit page
@@ -50,6 +50,7 @@ function createModal(imgEl) {
         modal.style.transform = 'translateY(-500%)'
 
     } else {
+
         if(imgEl.getBoundingClientRect().left > 500) {
             modal.style.transform = 'translate(-110%, -500%)'
 

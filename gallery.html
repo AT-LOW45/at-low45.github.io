@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=JetBrains+Mono:wght@300&family=Montserrat:wght@300&family=Port+Lligat+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
@@ -15,14 +15,16 @@
     <link rel="stylesheet" href="css/gallery.css">
 
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
 </head>
 <body>
     
     <nav id="top-nav">
         <ul>
-            <li><a href="xxx.index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
 
         </ul>
     </nav>
@@ -30,13 +32,15 @@
     <main>
         <header>
             <h1>Gallery</h1>
-            <div id="sub-hero">Bring the joy</div>
+            <div id="sub-hero">Pick the right gift.</div>
         </header>
 
         <section id="gallery">
             <figure tabindex="0" class="tall-photo" data-index="0">
                 <img  src="./assets/images/gallery/b10.jpeg" alt="">
             </figure>
+            <figure class="placeholder"></figure>
+            <figure class="placeholder2"></figure>
             <figure tabindex="0" class="tall-photo" data-index="1">
                 <img src="./assets/images/gallery/b12.jpeg"  alt="">
             </figure>
@@ -48,14 +52,20 @@
             </figure>
             <figure tabindex="0" class="tall-photo" data-index="4">
                 <img src="./assets/images/gallery/b6.jpeg"  alt="">
-
+            </figure>
+            <figure tabindex="0" class="tall-photo" data-index="4">
+                <img src="./assets/images/gallery/b13.jpeg"  alt="">
             </figure>
         </section>
     </main>
 
+    <a id="whatsapp" href="https://wa.me/60123721081" target="_blank">
+        <i class="fab fa-whatsapp" style="font-size: 2rem;"></i> &nbsp; Whatsapp Us
+    </a>
+
+    <script src="./js/index.js" type="module"></script>
     <script src="./js/gallery.js" type="module"></script>
 
-    <!-- <script src="./node_modules/animejs/lib/anime.es.js"></script> -->
 
 </body>
 </html>

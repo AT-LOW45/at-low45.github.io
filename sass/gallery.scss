@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
-    gap: 0.7rem;
+    gap: 1em;
     padding: 6%;
     z-index: 0;
 
@@ -22,21 +22,31 @@
         }
     
         .placeholder {
-            grid-column: span 2/ auto;
+            grid-column: span 2 / auto;
             grid-row: span 2 / auto;
+            background-color: inherit;
         }
     
         .placeholder2 {
-            grid-column: span 2/ auto;
+            grid-column: span 2 / auto;
             grid-row: span 1 / auto;
         }
     
     }
 
-    figure {
+    @media only screen and (max-width: 1001px) {
+        .placeholder, .placeholder2 {
+            display: none;
+        }
+
+        
+    }
+
+    figure:not(.placeholder, .placeholder2) {
   
         width: 100%;
         height: 100%;
+        cursor: pointer;
 
         &:focus {
             position: relative;
@@ -70,4 +80,26 @@
     box-shadow: 0px 0px 6px #B2B2B2;
 
 
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    background-color: #efa8ef;
+    background-image: linear-gradient(0deg, #efa8ef 0%, #eff8f8 100%);
+
+    
+    h1 {
+
+        font-weight: bold;
+    }
+
+    #sub-hero {
+        font-size: 1.2rem;
+    }
 }
