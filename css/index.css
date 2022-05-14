@@ -119,12 +119,9 @@ nav li a:hover {
   text-decoration: none;
   position: fixed;
   font-size: 1.2rem;
-  padding: 0.7em 2em 0.7em 0.8em;
-  transform: translateX(73%);
+  padding: 0.5em;
   bottom: 5%;
-  right: 0;
-  height: auto;
-  width: auto;
+  right: 3%;
   border-radius: 20px;
   border: 2px solid white;
   color: white;
@@ -133,8 +130,21 @@ nav li a:hover {
   display: none;
   opacity: 0;
 }
-#whatsapp:hover {
-  transform: translateX(16%);
+#whatsapp #wa-text {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  #whatsapp {
+    transform: translateX(73%);
+    padding: 0.7em 2em 0.7em 0.8em;
+    right: 0;
+  }
+  #whatsapp #wa-text {
+    display: inline;
+  }
+  #whatsapp:hover {
+    transform: translateX(16%);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
