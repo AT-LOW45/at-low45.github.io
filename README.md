@@ -1,2 +1,2 @@
 # AT-LOW45.github.io
-site in progress...sd
+This branch is no longer being used, development has moved to the "main" branch
