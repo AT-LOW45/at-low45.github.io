@@ -26,4 +26,9 @@ interface FAQ {
 	content: string;
 }
 
-export type { Product, Post, Feedback, FAQ };
+interface Search {
+    keyword: string,
+    result: Product | Post | FAQ | null
+}
+
+export type { Product, Post, Feedback, FAQ, Search };

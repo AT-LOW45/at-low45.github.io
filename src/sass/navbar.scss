@@ -1,0 +1,50 @@
+.Navbar {
+	height: 10vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > a {
+		margin: 0 10px 0 10px;
+		position: relative;
+        padding: 10px;
+
+		&::after {
+			bottom: 0;
+			content: "";
+			display: block;
+			height: 2.6px;
+			left: 50%;
+			position: absolute;
+			background: black;
+			transition: width 0.3s ease 0s, left 0.3s ease 0s;
+			width: 0;
+		}
+
+		&:hover::after {
+			width: 100%;
+			left: 0;
+		}
+
+		&:hover {
+			color: inherit;
+		}
+	}
+
+    form {
+        position: relative;
+
+        & > #searchInput {
+            padding: 0.5rem;
+        }
+
+        & > #searchButton {
+            padding: 0.3rem;
+            position: absolute;
+            right: 0px;
+        
+        }
+    }
+
+}
