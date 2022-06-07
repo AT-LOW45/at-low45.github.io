@@ -5,10 +5,48 @@
 	justify-content: center;
 	align-items: center;
 
-	& > a {
-		margin: 0 10px 0 10px;
+	@media only screen and (max-width: 768px) {
+		top: 0;
+		position: sticky;
+		background-color: white;
+	}
+
+	& #nav-menu {
+		display: flex;
+
+		@media only screen and (max-width: 768px) {
+			position: fixed;
+			top: 0;
+			z-index: 1;
+			flex-direction: column;
+			left: -100%;
+			transition: left 0.3s ease-in-out;
+			text-align: center;
+			background-color: white;
+			width: 50%;
+			height: 100vh;
+
+			&.open {
+				left: 0;
+				box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+			}
+
+			& li {
+				&:not(&:first-child) {
+					margin-bottom: 20px;
+				}
+
+				&:first-child {
+					margin-top: 1.2rem;
+				}
+			}
+		}
+	}
+
+	& a {
+		margin: 0 10px;
+		padding: 10px;
 		position: relative;
-        padding: 10px;
 
 		&::after {
 			bottom: 0;
@@ -32,19 +70,19 @@
 		}
 	}
 
-    form {
-        position: relative;
+	form {
+		position: relative;
 
-        & > #searchInput {
-            padding: 0.5rem;
-        }
+		& > #searchInput {
+			padding: 0.5rem;
+		}
 
-        & > #searchButton {
-            padding: 0.3rem;
-            position: absolute;
-            right: 0px;
-        
-        }
-    }
-
+		& > #searchButton {
+			padding: 0.2rem;
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			background-color: white;
+		}
+	}
 }

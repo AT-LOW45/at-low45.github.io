@@ -1,0 +1,20 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "g1",
+			"price": 100,
+			"category": "bouquet",
+			"tags": [],
+			"source": "../images/b4.jpeg"
+		},
+		{
+			"id": 2,
+			"name": "gallery2",
+			"price": 250,
+			"category": "bouquet",
+			"tags": [],
+			"source": "../images/b5.jpeg"
+		}
+	]
+}
