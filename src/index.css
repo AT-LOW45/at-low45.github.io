@@ -7,8 +7,6 @@
 }
 
 main {
-	/* padding: 0 20px 0 20px; */
-	/* min-height: 45vh; */
 	box-sizing: border-box;
 }
 
@@ -24,8 +22,16 @@ body {
 
 #whatsapp-link {
 	position: fixed;
-
 	right: 3%;
 	bottom: 5%;
+	z-index: 50;
+}
+
+#overlay {
+	position: fixed;
+	display: none;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 50;
 }
 

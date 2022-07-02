@@ -9,11 +9,12 @@ import useWindowSize from "../hooks/useWindowSize";
 import "../index.css";
 
 const Layout: FC = () => {
-	const { isNavOpen, toggleSideNav } = useContext(UiContext);
+	const { isNavOpen, toggleSideNav, overlayRef } = useContext(UiContext);
 	const { width } = useWindowSize();
 
 	return (
 		<div className='App'>
+			<div id="overlay" ref={overlayRef}></div>
 			<Navbar />
 			<main
 				onClick={() => {

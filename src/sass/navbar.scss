@@ -13,6 +13,7 @@
 
 	& #nav-menu {
 		display: flex;
+		z-index: 100;
 
 		@media only screen and (max-width: 768px) {
 			position: fixed;
@@ -28,7 +29,6 @@
 
 			&.open {
 				left: 0;
-				box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
 			}
 
 			& li {
@@ -82,7 +82,7 @@
 			position: absolute;
 			top: 5px;
 			right: 10px;
-			background-color: white;
+			background-color: inherit;
 		}
 	}
 }

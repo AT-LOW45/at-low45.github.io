@@ -1,23 +1,25 @@
-import React, { ChangeEvent, FC, useRef, useState } from "react";
-import "../sass/navbar.scss";
+import { FC, useContext, useEffect, useRef, useState } from "react";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { Link, useLocation } from "react-router-dom";
 import UiContext from "../context/UiContext";
-import { useContext } from "react";
 import useWindowSize from "../hooks/useWindowSize";
-import { Link } from "react-router-dom";
+import "../sass/navbar.scss";
 
 const Navbar: FC = () => {
 	const { width } = useWindowSize();
-	const { isNavOpen, toggleSideNav } = useContext(UiContext);
+	const { isNavOpen, toggleSideNav, navUlRef } = useContext(UiContext);
 	const [search, setSearch] = useState<string>("");
-
 	const searchInputRef = useRef<HTMLInputElement | null>(null);
-	const searchButtonRef = useRef<HTMLButtonElement | null>(null);
+	const location = useLocation();
+
+	useEffect(() => {
+		searchInputRef.current!.value = "";
+	}, [location, toggleSideNav]);
 
 	return (
-		<nav className='Navbar shadow-lg border-b-2 border-gray-200 px-6'>
+		<nav className='Navbar shadow-lg border-b-2 z-50 border-gray-200 px-6'>
 			<button
 				className='text-xl p-2 block md:hidden'
 				id='navbar-toggler'
@@ -28,23 +30,20 @@ const Navbar: FC = () => {
 				<GiHamburgerMenu />
 			</button>
 
-			<ul className='' id='nav-menu'>
+			<ul className='' id='nav-menu' ref={navUlRef}>
 				<li className='text-right block md:hidden'>
 					<button className='p-3' onClick={() => toggleSideNav()}>
 						<IoMdClose />
 					</button>
 				</li>
 				<li>
-					<Link to="/">Home</Link>
+					<Link to='/'>Home</Link>
 				</li>
 				<li>
-					<Link to="/gallery">Gallery</Link>
+					<Link to='/gallery'>Gallery</Link>
 				</li>
 				<li>
-					<Link to="/news">News</Link>
-				</li>
-				<li>
-					<Link to="/">About</Link>
+					<Link to='/news'>News</Link>
 				</li>
 			</ul>
 
@@ -64,12 +63,7 @@ const Navbar: FC = () => {
 					ref={searchInputRef}
 					onChange={(e) => setSearch(e.target.value)}
 				/>
-				<button
-					type='submit'
-					className=''
-					id='searchButton'
-					ref={searchButtonRef}
-				>
+				<button type='submit' className='' id='searchButton'>
 					<BiSearchAlt2 className='text-2xl text-blue-400 align-middle' />
 				</button>
 			</form>

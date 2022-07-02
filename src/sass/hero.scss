@@ -1,4 +1,25 @@
 .Hero {
-    height: 90vh;
-    width: 100vw;
+	height: 60vh;
+	padding: 1em;
+
+	& > header {
+		height: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.text {
+		font-size: 2rem;
+		font-weight: bold;
+		font-style: italic;
+		padding: 0.3em;
+	}
+
+	.sub-text {
+		font-size: 1.5rem;
+		padding: 0.4em;
+	}
+}
+
+.light {
+	color: white;
 }

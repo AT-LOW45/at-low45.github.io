@@ -7,12 +7,20 @@ interface Product {
 	source: string;
 }
 
+interface ProductLinks {
+	link: string;
+	img: string;
+	alt: string
+}
+
 interface Post {
 	id: number;
 	title: string;
-	body: string;
-	featured: Product;
+	content: string;
+	featured?: Product;
 	datePosted: Date;
+	attachment: string;
+	source: string;
 }
 
 interface Feedback {
@@ -31,4 +39,6 @@ interface Search {
     result: Product | Post | FAQ | null
 }
 
-export type { Product, Post, Feedback, FAQ, Search };
+
+
+export type { Product, ProductLinks, Post, Feedback, FAQ, Search };

@@ -16,5 +16,40 @@
 			"tags": [],
 			"source": "../images/b5.jpeg"
 		}
+	],
+
+	"news": [
+		{
+			"id": 1,
+			"title": "Check out our new deals!",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus viverra aliquam egestas. Quisque rhoncus aliquam velit sit amet luctus. Nullam aliquet ipsum erat, ut euismod dolor pretium id. Etiam in gravida dui, nec ultrices massa. Mauris facilisis mauris non commodo tincidunt. Cras in tellus in ex rhoncus gravida faucibus sed velit. Pellentesque arcu velit, tincidunt id nulla et, sollicitudin feugiat turpis. Phasellus vel fringilla lorem. Nam libero dolor, rutrum in sodales quis, pharetra et lorem. Duis lobortis lacinia placerat. Aenean iaculis, odio sit amet lacinia auctor, urna elit gravida leo, posuere porttitor mi purus in arcu. Pellentesque sagittis, nunc a varius scelerisque, nisl ligula laoreet diam, quis pulvinar augue sapien eu nulla. Vivamus in massa tristique, gravida velit nec, porta odio. Aliquam lacinia laoreet neque, sit amet egestas ligula placerat sed.\n\n Maecenas tempor mi facilisis vulputate facilisis.Curabitur sollicitudin tristique eros. Fusce faucibus pellentesque metus, sit amet iaculis neque commodo eu. Nam cursus nec tellus sed mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce sed finibus risus. Phasellus fermentum sem et magna tempus, non mollis ipsum porttitor. Curabitur ultrices dolor dolor, et malesuada massa tincidunt eget. Aenean laoreet consectetur dapibus. Suspendisse dignissim ante ut tellus pulvinar auctor. Quisque tortor nulla, iaculis in semper et, hendrerit non ipsum. Nunc erat lectus, lobortis sed libero id, maximus elementum nisi. Etiam iaculis, mi ut aliquam faucibus, turpis lorem cursus mauris, in venenatis libero augue sit amet erat. Phasellus felis orci, consequat quis finibus a, lobortis id augue. Proin malesuada eros ac efficitur suscipit. Nam vitae semper dolor, in tincidunt elit.",
+			"datePosted": "12/3/2022",
+			"attachment": "images/news2.jpg",
+			"source": ""
+		},
+		{
+			"id": 2,
+			"title": "Save big with the ongoing sale!",
+			"content": "Nullam scelerisque nulla leo, sit amet elementum nibh tristique ac. Integer eu dolor eu neque vestibulum lobortis quis nec velit. Fusce auctor fermentum erat ut feugiat. Suspendisse in posuere libero. Etiam massa nibh, imperdiet eu sapien sit amet, dapibus sodales nisi. Ut nec faucibus velit. Nulla ornare euismod lorem. Aenean dignissim id mi non tristique. Phasellus ut felis finibus, tempus mi sit amet, elementum arcu. Fusce eu mauris non metus interdum feugiat sit amet ac quam. Nulla nec felis eros. Nunc sit amet facilisis diam, vitae sollicitudin sem. Nulla sit amet egestas nisl.",
+			"featured": {
+				"id": 2,
+				"name": "gallery2",
+				"price": 250,
+				"category": "bouquet",
+				"tags": [],
+				"source": "../images/b5.jpeg"
+			},
+			"datePosted": "1/5/2022",
+			"attachment": "images/news1.jpg",
+			"source": ""
+		},
+		{
+			"id": 3,
+			"title": "Update to our policies",
+			"content": "Integer urna mi, laoreet vitae quam ut, laoreet fermentum augue. Sed at condimentum nisl. Nam vulputate orci eu lacus egestas dictum. Sed porttitor molestie arcu, vitae vestibulum enim commodo et. Donec eu sodales purus, id congue risus. Sed mattis magna vel congue auctor. Quisque eget nisl quam. Maecenas elementum molestie nulla a mattis. Mauris hendrerit et mauris quis rutrum. Nulla aliquam, lectus a suscipit finibus, mi nibh pellentesque mi, eu laoreet massa justo eget sem. Etiam laoreet sem a est aliquam egestas. Mauris dignissim scelerisque felis, tempor dignissim lorem.\n\nEtiam consectetur dapibus viverra. Phasellus in est lorem. In hac habitasse platea dictumst. Nunc at dui ut lacus euismod mattis. Aliquam finibus eros in maximus viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam sed sollicitudin nisl. Mauris est diam, faucibus non tincidunt id, efficitur vitae urna. Donec venenatis dignissim enim, at interdum nisl. Donec feugiat dictum est ut bibendum. Vestibulum nec augue vel diam venenatis fermentum. Fusce eu odio ultricies nisi semper cursus. Integer imperdiet nisl purus, eget aliquet neque dapibus non. Nam eget est ultrices, convallis nisi vitae, volutpat leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ornare libero ante, quis iaculis justo convallis id.",
+			"datePosted": "5/5/2022",
+			"attachment": "images/news3.jpg",
+			"source": ""
+		}
 	]
 }
